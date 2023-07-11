@@ -4,29 +4,65 @@ import package04.UAV;
 
 public class  MAV extends UAV{
 
-    private String brand;
-    private int carryCapacity;
+    private String model;
+    private double size;
 
     // default constructor
-    public AgriculturalDrone() {
+    public MAV() {
         super();
-		this.brand = "AgriFlyer";
-        this.carryCapacity = 50;
+		this.model = "MICO001";
+        this.size = 20;
 	}
 
     // parameter constructor
-	public AgriculturalDrone(String brand, double price, int horsepower, double weight,int carryCapacity) {
+	public MAV(String brand, double price, int horsepower, double weight, String model, double size) {
 		
         super(brand, price, horsepower,weight);
-		this.brand = brand;
-        this.carryCapacity = carryCapacity;
+		this.model = model;
+        this.size = size;
 	}
 	
 	//copy constructor
-    public AgriculturalDrone(AgriculturalDrone agriculturalDrone) {
-		super(agriculturalDrone);
-		this.brand = agriculturalDrone.brand;
-		this.carryCapacity = agriculturalDrone.carryCapacity;
+    public MAV(MAV mav) {
+		super(mav);
+		this.model = mav.model;
+		this.size = mav.size;
 	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public double getSize() {
+		return size;
+	}
+
+	public void setSize(double size) {
+		this.size = size;
+	}
+
+    @Override
+	public String toString() {
+		return "[ This MAV is manufactured by " + this.brand + ", costs " + this.price + "$, and horsepower is " + this.horsepower + 
+               ", weight is " + this.weight + "g, the model is " + this.model + ", size is no more than " + this.size + " cm ]";
+	}
+	
+    @Override
+    public boolean equals(MAV mav) {
+        if (mav == null || mav.getClass() != this.getClass())
+        {
+            return false;
+        }
+        else if (this.brand == mav.brand && this.price == mav.price && this.horsepower == mav.horsepower 
+                 && this.weight == mav.weight && this.model == mav.model && this.size == mav.size)
+        {
+            return true;
+        }         
+         
+    }
 
 }
