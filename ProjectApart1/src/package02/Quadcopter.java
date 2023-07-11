@@ -2,7 +2,7 @@ package package02;
 
 public class Quadcopter extends Helicopter{
 
-    public int maxFlyingSpeed;
+    private int maxFlyingSpeed;
     
     // default constructor
     public Quadcopter() {
