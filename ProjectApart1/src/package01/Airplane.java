@@ -64,7 +64,7 @@ public class Airplane {
         {
             return false;
         }
-        else if (this.brand.equals(airplane.brand) && this.price == airplane.price && this.horsepower == airplane.horsepower)
+        else if (this.brand == airplane.brand && this.price == airplane.price && this.horsepower == airplane.horsepower)
         {
             return true;
         }         
