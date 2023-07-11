@@ -2,9 +2,9 @@ package package01;
 
 public class Airplane {
 
-    private String brand;
-	private double price;
-    private int horsepower;
+    protected String brand;
+	protected double price;
+    protected int horsepower;
 	
     // default constructor
     public Airplane() {
