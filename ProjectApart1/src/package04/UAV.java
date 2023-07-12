@@ -64,9 +64,5 @@ public class UAV extends Airplane{
         }         
          
     }
-    
-    
-
-
 
 }
