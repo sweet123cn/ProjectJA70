@@ -1,4 +1,7 @@
-
+.DS_Store
+/bin/
+.classpath
+.project
 ProjectApart1/.classpath
 ProjectApart1/.project
 ProjectApart1/bin/package01/Airplane.class
