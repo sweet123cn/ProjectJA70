@@ -1,0 +1,14 @@
+
+Project A part 1 
+
+Indeed, there is an issue that has arisen in the displayed results. The first issue is the unreasonable price of $0.1 associated with the least expensive flying object. The root cause of this issue lies in the incorrect order of parameters during the call to the constructor. This problem has arisen due to the driver program and the main program having different authors. At the onset, the attribute sequence was not defined which led to inconsistencies while working simultaneously.
+
+To ensure proper alignment and clear communication, it's crucial that the attribute sequence is well-defined and followed uniformly across all parts of the program, especially when multiple people are involved in the development. Furthermore, thorough testing and validation should be performed to catch such issues early in the development cycle.
+
+Project A part 2
+
+After a thorough examination of the current codebase, the assessment has revealed some significant findings that warrant attention. Our primary issue is linked to the copyFlyingObjects method, which we are attempting to implement to effectively clone objects of the Airplane class and its subclasses without resorting to advanced tools such as getClass.
+
+We have observed that within the context of generics, it is impossible to ascertain the type of the input parameter due to type erasure in Java at runtime. The instances of type T are replaced by their bounds at runtime, in our case, Airplane.
+
+While polymorphism would restrict the output structure to only the three attributes of the Airplane class, a potential workaround would be to consider using the 'instanceof' operator. 
