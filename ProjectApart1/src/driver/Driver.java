@@ -53,6 +53,7 @@ public class Driver {
 		MAV mav2 = new MAV();
 		MAV mav3 = new MAV(mav2);
 		Airplane airplane3 = new Airplane(airplane1);
+
 		Helicopter helicopter3 = new Helicopter(helicopter2);
 
 		System.out.println(airplane1 + "\n" + helicopter1 + "\n" + quadcopter1 + "\n" + multirotor1 + "\n" + uav1 + "\n"
