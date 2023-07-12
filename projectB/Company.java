@@ -37,6 +37,9 @@ public class Company {
 		employees.add(e1);
 		employees.add(e2);
 		employees.add(e3);
+		
+		// demo getEmployeeAfter method to returns all employees hired after a particular Date
+		getEmployeesAfter(d4, employees);
 
 
 		//implement the method writeToFile and readFromFile that allow to write and read
