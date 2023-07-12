@@ -64,6 +64,7 @@ public class Driver {
 		//copy constructor
 		MAV mav3 = new MAV(mav2);
 		Airplane airplane3 = new Airplane(airplane1);
+
 		Helicopter helicopter3 = new Helicopter(helicopter2);
 		Quadcopter quadcopter3 = new Quadcopter(quadcopter1);
 		Multirotor multirotor3 = new Multirotor(multirotor2);

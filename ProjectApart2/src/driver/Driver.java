@@ -74,6 +74,7 @@ public class Driver {
 		for (Airplane object : copyResultArray) {
 			System.out.println(object);
 		}
+    
 	}
 
 }
