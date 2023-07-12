@@ -38,7 +38,11 @@ public class Company {
 		employees.add(e2);
 		employees.add(e3);
 
+<<<<<<< HEAD
 		//implement the method writeToFile and readFromFile that allow to write and read
+=======
+		List<Employee> employeesAfterd4 = getEmployeesAfter(d4, employees);
+>>>>>>> d438c79177dc4a5bad5f8ef19c9f6e63c5204ab1
 		writeToFile();
 		readFromFile();
 
