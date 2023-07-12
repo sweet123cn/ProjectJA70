@@ -40,16 +40,17 @@ public class Quadcopter extends Helicopter{
 	}
 	
     @Override
-    public boolean equals(Quadcopter quadcopter) {
-        if (quadcopter == null || quadcopter.getClass() != this.getClass())
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
         {
             return false;
         }
-        else if (this.brand == quadcopter.brand && this.price == quadcopter.price && this.horsepower == quadcopter.horsepower 
-                 && this.noOfCylinders == quadcopter.noOfCylinders && this.creationYear == quadcopter.creationYear 
-                 && this.passengerCapacity == quadcopter.passengerCapacity && this.maxFlyingSpeed == quadcopter.maxFlyingSpeed)
+        else
         {
-            return true;
+            Quadcopter quadcopter = (Quadcopter) obj;
+            return this.brand.equals(quadcopter.brand) && this.price == quadcopter.price && this.horsepower == quadcopter.horsepower 
+                 && this.noOfCylinders == quadcopter.noOfCylinders && this.creationYear == quadcopter.creationYear 
+                 && this.passengerCapacity == quadcopter.passengerCapacity && this.maxFlyingSpeed == quadcopter.maxFlyingSpeed;
         }         
          
     }
