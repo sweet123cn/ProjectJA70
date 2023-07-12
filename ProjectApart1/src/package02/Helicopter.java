@@ -64,16 +64,17 @@ public class Helicopter extends Airplane{
 	}
 	
     @Override
-    public boolean equals(Helicopter helicopter) {
-        if (helicopter == null || helicopter.getClass() != this.getClass())
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
         {
             return false;
         }
-        else if (this.brand == helicopter.brand && this.price == helicopter.price && this.horsepower == helicopter.horsepower 
-                 && this.noOfCylinders == helicopter.noOfCylinders && this.creationYear == helicopter.creationYear 
-                 && this.passengerCapacity == helicopter.passengerCapacity)
+        else
         {
-            return true;
+            Helicopter helicopter = (Helicopter) obj;
+			return this.brand.equals(helicopter.brand) && this.price == helicopter.price && this.horsepower == helicopter.horsepower 
+                 && this.noOfCylinders == helicopter.noOfCylinders && this.creationYear == helicopter.creationYear 
+                 && this.passengerCapacity == helicopter.passengerCapacity;
         }         
          
     }
