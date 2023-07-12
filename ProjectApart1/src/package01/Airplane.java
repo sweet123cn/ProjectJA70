@@ -9,7 +9,7 @@ public class Airplane {
     // default constructor
     public Airplane() {
 		this.brand = "Boing";
-		this.price = 10000000;
+		this.price = 1000000;
         this.horsepower = 10000;
 	}
 
