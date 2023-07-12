@@ -112,7 +112,7 @@ public class Company {
 				oos.writeChar('\t');
 				oos.writeUTF(name);
 				oos.writeChar(' ');
-				System.out.println("hireDate: ");
+				System.out.println("hireDatedd-mm-yy: ");
 				hireDate = kb.next();
 				oos.writeUTF(hireDate);
 				oos.writeChar(' ');
