@@ -1,4 +1,8 @@
 
+.DS_Store
+/bin/
+.classpath
+.project
 ProjectApart1/.classpath
 ProjectApart1/.project
 ProjectApart2/.classpath
