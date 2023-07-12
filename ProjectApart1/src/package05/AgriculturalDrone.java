@@ -51,16 +51,16 @@ public class AgriculturalDrone extends UAV{
                ", weight is " + this.weight + ", It can carry up to " + this.carryCapacity + " Kg ]";
 	}
 	
-    @Override
-    public boolean equals(AgriculturalDrone agriculturalDrone) {
-        if (agriculturalDrone == null || agriculturalDrone.getClass() != this.getClass())
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
         {
             return false;
         }
-        else if (this.brand == agriculturalDrone.brand && this.price == agriculturalDrone.price && this.horsepower == agriculturalDrone.horsepower 
-                 && this.weight == agriculturalDrone.weight && this.carryCapacity == agriculturalDrone.carryCapacity)
+        else
         {
-            return true;
+            AgriculturalDrone agriculturalDrone = (AgriculturalDrone) obj;
+			return this.brand.equals(agriculturalDrone.brand) && this.price == agriculturalDrone.price && this.horsepower == agriculturalDrone.horsepower 
+                 && this.weight == agriculturalDrone.weight && this.carryCapacity == agriculturalDrone.carryCapacity;
         }         
          
     }
