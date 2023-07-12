@@ -23,12 +23,12 @@ public class Driver {
 		}
 
 		if (leastExpensive != null) {
-			System.out.println("The least expensive flying object is: " + leastExpensive.toString());
+			System.out.println("The least expensive flying object is: " + leastExpensive.getBrand() + " the price is $" + leastExpensive.getPrice());
 		} else {
 			System.out.println("No flying objects were found in the array.");
 		}
 		if (mostExpensive != null) {
-			System.out.println("The most expensive flying object is: " + mostExpensive.toString());
+			System.out.println("The most expensive flying object is: " + mostExpensive.getBrand() + " the price is $" + mostExpensive.getPrice());
 		} else {
 			System.out.println("No flying objects were found in the array.");
 		}
@@ -42,7 +42,7 @@ public class Driver {
 		Multirotor multirotor1 = new Multirotor("Parrot", 1000.0, 50, 4, 2023, 1, 4);
 		UAV uav1 = new UAV("brand1", 5000, 0, 1.5);
 		AgriculturalDrone agriculturalDrone1 = new AgriculturalDrone("Yamaha", 10000.0, 500, 2.0,10);
-		MAV mav1 = new MAV("Hoverfly",399.0, 0, 100.0, "Cybertrunk", 20);
+		MAV mav1 = new MAV("Hoverfly",299.0, 0, 100.0, "Cybertrunk", 20);
 
 		Airplane airplane2 = new Airplane();
 		Helicopter helicopter2 = new Helicopter();
@@ -105,12 +105,12 @@ public class Driver {
 
 
 		Airplane[] flyingObject1 = { airplane1, helicopter1, quadcopter1, multirotor1, uav1, agriculturalDrone1, mav1,
-				airplane2, helicopter2, quadcopter2, multirotor2, uav2, agriculturalDrone2, mav2, airplane3, mav3,
+				airplane2, helicopter2, quadcopter2, multirotor2, uav2, agriculturalDrone2, mav1, airplane3, mav3,
 				helicopter3 };
 
 		// without UAV
 		Airplane[] flyingObject2 = { airplane1, helicopter1, quadcopter1, multirotor1, agriculturalDrone1, mav1,
-				airplane2, helicopter2, quadcopter2, multirotor2, agriculturalDrone2, mav2, airplane3, mav3,
+				airplane2, helicopter2, quadcopter2, multirotor2, agriculturalDrone2, mav1, airplane3, mav3,
 				helicopter3 };
 
 		findLeastAndMostExpensiveUAV(flyingObject1);
