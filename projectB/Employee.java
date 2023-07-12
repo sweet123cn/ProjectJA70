@@ -47,7 +47,7 @@ public class Employee implements Serializable {
 	public void setPosition(String p) {
 		position = p;
 	}
-
+//override toString return employee information
 	@Override
 	public String toString() {
 		return "Employee name: " + name + ", id: " + id + ", hireDate: " + hireDate + ", position: " + position;

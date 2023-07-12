@@ -16,8 +16,11 @@ public class Company {
 		// TODO Auto-generated method stub
 
 		Scanner kb = new Scanner(System.in);
+		//demonstrate if invalid input ,set default value
 		Date d1 = new Date(13, 14, 2015);
 		d1.dateOK();
+		//create employee objects and add  information to a repertory (arraylist).
+
 		Date d2 = new Date(10, 35, 2016);
 		d2.dateOK();
 		Date d3 = new Date(9, 1, 999);
@@ -35,7 +38,7 @@ public class Company {
 		employees.add(e2);
 		employees.add(e3);
 
-		List<Employee> employeesAfterd4 = getEmployeesAfter(d4, employees);
+		//implement the method writeToFile and readFromFile that allow to write and read
 		writeToFile();
 		readFromFile();
 
