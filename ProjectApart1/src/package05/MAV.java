@@ -51,16 +51,18 @@ public class  MAV extends UAV{
                ", weight is " + this.weight + "g, the model is " + this.model + ", size is no more than " + this.size + " cm ]";
 	}
 	
-    @Override
-    public boolean equals(MAV mav) {
-        if (mav == null || mav.getClass() != this.getClass())
+	@Override
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
         {
             return false;
         }
-        else if (this.brand == mav.brand && this.price == mav.price && this.horsepower == mav.horsepower 
-                 && this.weight == mav.weight && this.model == mav.model && this.size == mav.size)
-        {
-            return true;
+        else
+		{ 
+			MAV mav = (MAV) obj;
+			return this.brand.equals(mav.brand) && this.price == mav.price && this.horsepower == mav.horsepower 
+                 && this.weight == mav.weight && this.model.equals(mav.model) && this.size == mav.size;
+        
         }         
          
     }
