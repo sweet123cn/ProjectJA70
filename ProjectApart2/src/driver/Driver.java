@@ -37,7 +37,7 @@ public class Driver {
 		MAV mav2 = new MAV();
 		MAV mav3 = new MAV(mav2);
 		Airplane airplane3 = new Airplane(airplane1);
-		Helicopter helicopter3 = new Helicopter("Bell", 100000.0, 800, 8, 2022, 5);
+		Helicopter helicopter3 = new Helicopter(helicopter2);
 		Airplane[] flyingObject1 = { airplane1, helicopter1, quadcopter1, multirotor1, uav1, agriculturalDrone1, mav1,
 				airplane2, helicopter2, quadcopter2, multirotor2, uav2, agriculturalDrone2, mav2, airplane3, mav3,
 				helicopter3 };
