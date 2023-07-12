@@ -40,7 +40,7 @@ public class Driver {
 		Helicopter helicopter1 = new Helicopter("Bell", 100000.0, 800, 6, 2022, 5);
 		Quadcopter quadcopter1 = new Quadcopter("DJI", 2000.0, 100, 4, 2023, 1, 60);
 		Multirotor multirotor1 = new Multirotor("Parrot", 1000.0, 50, 4, 2023, 1, 4);
-		UAV uav1 = new UAV("brand1", 5000, 0, 1.5);
+		UAV uav1 = new UAV("brand1", 5000, 2, 1.5);
 		AgriculturalDrone agriculturalDrone1 = new AgriculturalDrone("Yamaha", 10000.0, 500, 2.0,10);
 		MAV mav1 = new MAV("Hoverfly",299.0, 0, 100.0, "Cybertrunk", 20);
 
