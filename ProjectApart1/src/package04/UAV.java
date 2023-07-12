@@ -52,15 +52,15 @@ public class UAV extends Airplane{
 	}
 	
     @Override
-    public boolean equals(UAV uav) {
-        if (uav == null || uav.getClass() != this.getClass())
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
         {
             return false;
         }
-        else if (this.brand == uav.brand && this.price == uav.price && this.horsepower == uav.horsepower 
-                 && this.weight == uav.weight)
+        else
         {
-            return true;
+			UAV uav = (UAV) obj;
+			return this.brand.equals(uav.brand) && this.price == uav.price && this.horsepower == uav.horsepower && this.weight == uav.weight;
         }         
          
     }
