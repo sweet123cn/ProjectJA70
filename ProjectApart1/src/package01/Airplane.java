@@ -59,14 +59,15 @@ public class Airplane {
 	}
 	
     @Override
-    public boolean equals(Airplane airplane) {
-        if (airplane == null || airplane.getClass() != this.getClass())
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
         {
             return false;
         }
-        else if (this.brand == airplane.brand && this.price == airplane.price && this.horsepower == airplane.horsepower)
+        else
         {
-            return true;
+			Airplane airplane = (Airplane) obj;
+            return this.brand.equals(airplane.brand) && this.price == airplane.price && this.horsepower == airplane.horsepower;
         }         
          
     }
