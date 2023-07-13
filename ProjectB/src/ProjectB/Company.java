@@ -1,4 +1,4 @@
-package projectB;
+package ProjectB;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -39,12 +39,14 @@ public class Company {
 
 		//implement the method writeToFile and readFromFile that allow to write and read
 		writeToFile(employees);
-        System.out.println("enter filename");
+        System.out.println("enter filename to display employee information:");
         String nameOfFile = kb.nextLine();
         List<Employee> readEmployees = readFromFile(nameOfFile);
         for(Employee employee: readEmployees) {
             System.out.println(employee);
         }
+
+        kb.close();
 	}
 
 	public static ArrayList<Employee> getEmployeesAfter(Date mmddyy, List<Employee> employees) {
@@ -59,9 +61,9 @@ public class Company {
 		return employeesAfter;
 	}
 	public static void writeToFile(List<Employee> employees) {
-        Scanner kb = new Scanner(System.in);
-		System.out.println("Please enter the fileName :");
-        String fileName = kb.nextLine();
+        Scanner kb1 = new Scanner(System.in);
+		System.out.println("Please enter the fileName to store employee information:");
+        String fileName = kb1.nextLine();
         System.out.println("the information will store in " + fileName);
         try {
             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName +".txt", true));
@@ -74,14 +76,13 @@ public class Company {
             System.out.println("something wrong");
             e.printStackTrace();
         }
-    }
 
- 
+    }
 
     public static List<Employee> readFromFile(String fileName) throws ClassNotFoundException {
         List<Employee> employees = new ArrayList<>();
         try {
-            FileInputStream fileIn = new FileInputStream(fileName);
+            FileInputStream fileIn = new FileInputStream(fileName+".txt");
             ObjectInputStream ois = new ObjectInputStream(fileIn);
             while (true) {
                 try {

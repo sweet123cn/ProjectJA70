@@ -1,4 +1,4 @@
-package projectB;
+package ProjectB;
 
 import java.io.Serializable;
 
