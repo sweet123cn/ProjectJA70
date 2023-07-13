@@ -50,7 +50,7 @@ public class Driver {
 		Multirotor multirotor1 = new Multirotor("Parrot", 1000.0, 50, 4, 2023, 1, 4);
 		UAV uav1 = new UAV("brand1", 5000, 2, 1.5);
 		AgriculturalDrone agriculturalDrone1 = new AgriculturalDrone("Yamaha", 10000.0, 500, 2.0,10);
-		MAV mav1 = new MAV("Hoverfly",299.0, 0, 100.0, "Cybertrunk", 20);
+		MAV mav1 = new MAV("Hoverfly",299.0, 5, 100.0, "Cybertrunk", 20);
 
 		//default constructor
 		Airplane airplane2 = new Airplane();
